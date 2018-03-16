@@ -31,7 +31,7 @@
     <dependency>
       <groupId>org.apache.camel.component.fxcm</groupId>
       <artifactId>camel-fxcm-api</artifactId>
-      <version>2.21.0-SNAPSHOT</version>
+      <version>${project.version}</version>
     </dependency>
 
     <!-- support camel documentation -->
@@ -120,7 +120,7 @@
             <Import-Package>
               ${componentPackage}.api;version=${project.version},
               ${componentPackage};version=${project.version},
-              org.apache.camel.*;version=${camelVersion}
+              org.apache.camel.*;version=${project.version}
             </Import-Package>
             <Private-Package>${outPackage}</Private-Package>
             <Implementation-Title>Apache Camel</Implementation-Title>
@@ -219,7 +219,7 @@
       <plugin>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-package-maven-plugin</artifactId>
-        <version>${camelVersion}</version>
+        <version>${project.version}</version>
         <executions>
           <execution>
             <id>prepare</id>
@@ -276,7 +276,7 @@
         <plugin>
           <groupId>org.apache.camel</groupId>
           <artifactId>camel-api-component-maven-plugin</artifactId>
-          <version>${camelVersion}</version>
+          <version>${project.version}</version>
           <configuration>
             <scheme>${schemeName}</scheme>
             <componentName>${componentName}</componentName>
@@ -294,7 +294,7 @@
       <plugin>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-api-component-maven-plugin</artifactId>
-        <version>${camelVersion}</version>
+        <version>${project.version}</version>
         <configuration>
           <scheme>${schemeName}</scheme>
           <componentName>${componentName}</componentName>

@@ -17,10 +17,6 @@
   <name>Camel Fxcm Component Parent</name>
   <description>Parent project for Camel {Fxcm} Component</description>
 
-  <properties>
-    <camelVersion>2.20.1</camelVersion>
-  </properties>
-
   <modules>
     <module>camel-fxcm-component</module>
     <module>camel-fxcm-api</module>
@@ -32,7 +28,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-parent</artifactId>
-        <version>${camelVersion}</version>
+        <version>${project.version}</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
