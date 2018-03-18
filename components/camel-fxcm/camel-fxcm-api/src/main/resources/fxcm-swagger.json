@@ -944,7 +944,7 @@
             "name": "body",
             "in": "body",
             "schema": {
-              "description": "Please see query parameters above."
+              "$ref": "#/definitions/OpenTradeRequestDefinition"
             },
             "x-examples": {
               "application/json": {
