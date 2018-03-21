@@ -2,6 +2,7 @@ package org.apache.camel.component.fxcm;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.Endpoint;
+import org.apache.camel.spi.Metadata;
 import org.apache.camel.util.component.AbstractApiComponent;
 
 import org.apache.camel.component.fxcm.internal.FxcmApiCollection;
@@ -11,6 +12,9 @@ import org.apache.camel.component.fxcm.internal.FxcmApiName;
  * Represents the component that manages {@link FxcmEndpoint}.
  */
 public class FxcmComponent extends AbstractApiComponent<FxcmApiName, FxcmConfiguration, FxcmApiCollection> {
+
+    @Metadata
+    private String accessKey;
 
     public FxcmComponent() {
         super(FxcmEndpoint.class, FxcmApiName.class, FxcmApiCollection.getCollection());

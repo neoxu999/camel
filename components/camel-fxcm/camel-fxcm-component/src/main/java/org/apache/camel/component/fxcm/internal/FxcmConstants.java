@@ -10,4 +10,7 @@ public interface FxcmConstants {
 
     // thread profile name for this component
     String THREAD_PROFILE_NAME = "CamelFxcm";
+
+    String OPERATION = "CamelFxcmOperation";
+
 }
