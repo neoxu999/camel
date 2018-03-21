@@ -7,7 +7,7 @@ import java.util.Map;
  *
  * @author Long Xu, 20/3/18
  */
-public class MarketDataApi {
+public class FxcmMarketDataApi {
 
 	public String subscribe(Map<String, String> headers) {
 		return null;
