@@ -16,6 +16,9 @@ import java.util.Map;
 public class FxcmConfiguration {
 
 	@UriPath
+	private String apiHost;
+
+	@UriPath
 	@Metadata(required = "true")
 	private FxcmApiName apiName;
 
@@ -31,6 +34,14 @@ public class FxcmConfiguration {
 
 	@UriParam(label = "security")
 	private SSLContextParameters sslContextParameters;
+
+	public String getApiHost() {
+		return apiHost;
+	}
+
+	public void setApiHost(String apiHost) {
+		this.apiHost = apiHost;
+	}
 
 	/**
 	 * What kind of operation to perform
